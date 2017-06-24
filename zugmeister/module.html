@@ -1,0 +1,10 @@
+<section class="zugmeister">
+    <form name="zugmeisterForm">
+        <label>Vehicle</label><br>
+        <select name="vehicleType" data-ng-options="vehicle.type for vehicle in $ctrl.vehicles | unique : 'type'" ng-model="vehicleType"></select><br>
+        <label> Brand </label><br>
+        <select name="vehicleBrand" data-ng-options="vehicle.brand for vehicle in $ctrl.vehicles track by vehicle.brand" ng-model="vehicleType"></select><br>
+        <label> Color </label><br>
+        <select name="vehicleColor" data-ng-options="color for vehicle.color for vehicle in $ctrl.vehicles" ng-model="selectedIvehicleTypetem"></select><br>
+    </form>
+</section>
